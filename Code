@@ -1,0 +1,14 @@
+#Import discord
+import discord
+
+#Client
+client = discord.Client()
+@client.event
+async def on_ready():
+    #Commands and making it do stuff
+    general_channel = client.get_channel(INSERTCHANNELID)# Make sure that There are no ' or "" when you insert
+
+    await general_channel.send("Hello, world!")
+
+#Run the client with the token
+client.run('INSERTBOTTOKEN')
